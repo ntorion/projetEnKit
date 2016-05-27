@@ -75,9 +75,13 @@ public class MyUI extends UI {
 
         final HorizontalLayout barreDuHautDroit = new HorizontalLayout();
 
+        final HorizontalLayout boutonsES = new HorizontalLayout();
+
         Label simul = new Label();
 
         Slider sld = new Slider();
+
+        Controller ctr = new Controller(simul, buttonFormeRond, buttonFormeCarre, buttonFormeTriangle, buttonFormeHexagone, buttonFormePentagone, buttonFormeLigne);
 
     /* explicit callback */
     /* https://vaadin.com/docs/-/part/framework/application/application-events.html */
@@ -125,6 +129,8 @@ public class MyUI extends UI {
 
         simul.addStyleName("simul");
 
+        boutonsES.addComponents(buttonESCarre, buttonESRond);
+
         buttonFormeRond.addStyleName("buttonFormeRond");
         buttonFormeCarre.addStyleName("buttonFormeCarre");
         buttonFormeTriangle.addStyleName("buttonFormeTriangle");
@@ -138,7 +144,7 @@ public class MyUI extends UI {
         elementsBasGauche.addComponents(texteLongueur,texteLargeur, button);
         elementsBasGauche.addStyleName("elementsBasGauche");
 
-        coteGauche.addComponents(fdp,gLayout,es,buttonESRond,buttonESCarre,elementsBasGauche);
+        coteGauche.addComponents(fdp,gLayout,es,boutonsES,elementsBasGauche);
 
         bienvenue.addStyleName("bienvenue");
 

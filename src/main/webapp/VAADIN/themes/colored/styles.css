@@ -12954,9 +12954,59 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	position: relative;
 }
 
-.v-label-simul {
+.v-label-simulRond {
 	position: fixed;
 	background-image: url('images/rond.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 40%;
+}
+
+.v-label-simulCarre {
+	position: fixed;
+	background-image: url('images/carre.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 40%;
+}
+
+.v-label-simulTriangle {
+	position: fixed;
+	background-image: url('images/triangle.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 40%;
+}
+
+.v-label-simulHexagone {
+	position: fixed;
+	background-image: url('images/hexagone.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 40%;
+}
+
+.v-label-simulPentagone {
+	position: fixed;
+	background-image: url('images/pentagone.png');
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 40%;
+}
+
+.v-label-simulLigne {
+	position: fixed;
+	background-image: url('images/ligne.png');
 	background-repeat: no-repeat;
 	width: 500px;
 	height: 500px;
@@ -12975,7 +13025,7 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	color: #FFF;
 	padding: 10px;
 	bottom: 0;
-	left: 301px;
+	left: 302px;
 	width: 100%;
 }
 
@@ -13012,6 +13062,7 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 30px;
 	height: 35px;
 	background-image: url('images/arriere2.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
 }
@@ -13020,6 +13071,7 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 30px;
 	height: 35px;
 	background-image: url('images/avant2.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
 }
@@ -13028,6 +13080,7 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 30px;
 	height: 35px;
 	background-image: url('images/logout2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
 }
@@ -13036,9 +13089,10 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 80px;
 	height: 80px;
 	background-image: url('images/rond2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
@@ -13046,9 +13100,10 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 80px;
 	height: 80px;
 	background-image: url('images/carre2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
@@ -13056,9 +13111,10 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 80px;
 	height: 80px;
 	background-image: url('images/triangle2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
@@ -13066,9 +13122,10 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 80px;
 	height: 80px;
 	background-image: url('images/pentagone2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
@@ -13076,9 +13133,10 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	width: 80px;
 	height: 80px;
 	background-image: url('images/hexagone2.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
@@ -13087,29 +13145,32 @@ h1.no-margin, .v-label-h1.no-margin, h2.no-margin, .v-label-h2.no-margin, h3.no-
 	height: 80px;
 	background-image: url('images/ligne2.png');
 	background-repeat: no-repeat;
+	background-position: center;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 }
 
 .v-button-buttonESCarre {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	background-image: url('images/carreES2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 	padding: 5px;
 }
 
 .v-button-buttonESRond {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	background-image: url('images/rondES2.png');
+	background-position: center;
 	background-repeat: no-repeat;
 	border: 0px;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin: 7px;
 	padding: 5px;
 }
