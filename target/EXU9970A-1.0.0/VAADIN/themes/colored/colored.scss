@@ -1,0 +1,17 @@
+@import "../valo/valo.scss";
+
+@mixin colored {
+  @include valo;
+
+  .v-button {
+    background-image: none;
+    background-color: yellow;
+  }
+
+
+  /*.v-verticallayout-coteGauche {
+    background-color: #000;
+  }*/
+
+}
+@include colored;

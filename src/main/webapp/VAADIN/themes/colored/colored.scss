@@ -1,0 +1,184 @@
+@import "../valo/valo.scss";
+
+@mixin colored {
+  @include valo;
+
+  .v-button {
+    background-image: none;
+  }
+
+  .v-verticallayout-coteGauche {
+    position: fixed;
+    background-color: #323232;
+    padding: 20px;
+    height: 100%;
+    color:#FFF;
+    max-width: 320px;
+  }
+
+  .v-verticallayout-coteDroit {
+    position: relative;
+  }
+
+  .v-label-simul {
+    position:fixed;
+    background-image: url('images/rond.png');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    top:20%;
+    left:40%;
+  }
+
+  .v-verticallayout-elementsBasGauche {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .v-horizontallayout-barreDuBas {
+    position: fixed;
+    background-color: #89BFDE;
+    color: #FFF;
+    padding: 10px;
+    bottom: 0;
+    left:301px;
+    width: 100%;
+  }
+
+  .v-button-buttonFermer {
+    position: fixed;
+    right:200px;
+    margin: 3px;
+  }
+
+  .v-button-buttonSauvegarder {
+    position: fixed;
+    right:5px;
+    margin: 3px;
+  }
+
+  .v-horizontallayout-barreDuHautGauche {
+    position: fixed;
+    left:320px;
+    padding: 5px;
+  }
+
+  .v-horizontallayout-barreDuHautDroit {
+    position: fixed;
+    right: 0;
+    padding: 5px;
+  }
+
+  .v-label-bienvenue {
+    margin: 5px;
+    margin-right: 20px;
+  }
+
+  .v-button-arriere {
+    width: 30px;
+    height: 35px;
+    background-image: url('images/arriere2.jpg');
+    background-repeat: no-repeat;
+    border:0px;
+  }
+
+  .v-button-avant {
+    width: 30px;
+    height: 35px;
+    background-image: url('images/avant2.jpg');
+    background-repeat: no-repeat;
+    border:0px;
+  }
+
+  .v-button-deconnecter {
+    width: 30px;
+    height: 35px;
+    background-image: url('images/logout2.png');
+    background-repeat: no-repeat;
+    border:0px;
+  }
+
+  .v-button-buttonFormeRond {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/rond2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonFormeCarre {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/carre2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonFormeTriangle {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/triangle2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonFormePentagone {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/pentagone2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonFormeHexagone {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/hexagone2.jpg');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonFormeLigne {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/ligne2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+  }
+
+  .v-button-buttonESCarre {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/carreES2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 5px;
+  }
+
+  .v-button-buttonESRond {
+    width: 80px;
+    height: 80px;
+    background-image: url('images/rondES2.png');
+    background-repeat: no-repeat;
+    border:0px;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 5px;
+  }
+
+}
+@include colored;
